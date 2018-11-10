@@ -67,7 +67,7 @@ patsubst(patsubst(
 detokenized,
 ` CM ', `,'),
 `X(\(.*\>\)\s*\([a-zA-Z_][a-zA-Z0-9_]*\)\(\(\s*\[.*\]\)*\)\s*',
-`X(\1`'patsubst(`\3', `\s*\\[[^]]*\\]\s*', `*'), \2')dnl
+`X(\1`'translit(`\3', `[] A-Za-z0-9_', `*'), \2')dnl
 )dnl
 undefine(`struct_decl', `_struct_decl')dnl
 define(`X', `$1 $2;')dnl
