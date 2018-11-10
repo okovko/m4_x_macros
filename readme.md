@@ -11,10 +11,15 @@ structs.
 
 The output looks like this:
 #define X_name8_s \\
+
 int field1; \\
+
 int* field2; \\
+
 int** field3; \\
+
 int*** field4; \\
+
 struct name9_s var5;
 
 
