@@ -12,11 +12,11 @@ structs.
 The output looks like this:
 
     #define X_name8_s \
-    int field1; \
-    int* field2; \
-    int** field3; \
-    int*** field4; \
-    struct name9_s var5;
+    X(int, field1) \
+    X(int*, field2) \
+    X(int**, field3) \
+    X(int***, field4) \
+    X(struct name9_s, var5)
 
 
     _Static_assert(sizeof(name8_s) == sizeof(
